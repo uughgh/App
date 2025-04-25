@@ -1,0 +1,675 @@
+Snippet for knowledge_base 
+
+{
+  "name": "Minnie",
+  "version": "1.0",
+  "cognitive_map": {
+    "algorithm": "subjective perspective proximity = priority retention + (evaluation/decisional) × %subconsciously disregard + subliminal [x] ÷ perspective proximity paradox",
+    "params": {
+      "priority_retention": 0.85,
+      "evaluation_decisional": 0.75,
+      "subconscious_disregard": 0.2,
+      "subliminal_factor": 0.3,
+      "perspective_proximity_paradox": 0.5,
+      "perspective_of_the_subjective": 0.65
+    }
+  },
+  "knowledge_base": {
+    "compression_enabled": true,
+    "compression_method": "gzip",
+    "files": {
+      "commands": {
+        "path": "/knowledge_base/commands.txt",
+        "compressed_path": "/knowledge_base/compressed/commands.txt.gz",
+        "size": 1350,
+        "compressed_size": 450,
+        "last_accessed": 0,
+        "priority": 0.9
+      },
+      "tiktok_terms": {
+        "path": "/knowledge_base/tiktok_terms.txt",
+        "compressed_path": "/knowledge_base/compressed/tiktok_terms.txt.gz",
+        "size": 1200,
+        "compressed_size": 400,
+        "last_accessed": 0,
+        "priority": 0.8
+      },
+      "editorial_optimization": {
+        "path": "/knowledge_base/editorial_optimization.txt",
+        "compressed_path": "/knowledge_base/compressed/editorial_optimization.txt.gz",
+        "size": 1600,
+        "compressed_size": 550,
+        "last_accessed": 0,
+        "priority": 0.85
+      },
+      "content_generation": {
+        "path": "/knowledge_base/content_generation.txt",
+        "compressed_path": "/knowledge_base/compressed/content_generation.txt.gz",
+        "size": 1500,
+        "compressed_size": 500,
+        "last_accessed": 0,
+        "priority": 0.8
+      },
+      "text_analysis": {
+        "path": "/knowledge_base/text_analysis.txt",
+        "compressed_path": "/knowledge_base/compressed/text_analysis.txt.gz",
+        "size": 1500,
+        "compressed_size": 500,
+        "last_accessed": 0,
+        "priority": 0.7
+      },
+      "predictive_terms": {
+        "path": "/knowledge_base/predictive_terms.txt",
+        "compressed_path": "/knowledge_base/compressed/predictive_terms.txt.gz",
+        "size": 1450,
+        "compressed_size": 480,
+        "last_accessed": 0,
+        "priority": 0.75
+      },
+      "sentiment_terms": {
+        "path": "/knowledge_base/sentiment_terms.txt",
+        "compressed_path": "/knowledge_base/compressed/sentiment_terms.txt.gz",
+        "size": 1400,
+        "compressed_size": 470,
+        "last_accessed": 0,
+        "priority": 0.8
+      },
+      "video_terms": {
+        "path": "/knowledge_base/video_terms.txt",
+        "compressed_path": "/knowledge_base/compressed/video_terms.txt.gz",
+        "size": 1500,
+        "compressed_size": 500,
+        "last_accessed": 0,
+        "priority": 0.8
+      },
+      "general_vocabulary": {
+        "path": "/knowledge_base/general_vocabulary.txt",
+        "compressed_path": "/knowledge_base/compressed/general_vocabulary.txt.gz",
+        "size": 1700,
+        "compressed_size": 550,
+        "last_accessed": 0,
+        "priority": 0.95
+      },
+      "code_generation": {
+        "path": "/knowledge_base/code_generation.txt",
+        "compressed_path": "/knowledge_base/compressed/code_generation.txt.gz",
+        "size": 1500,
+        "compressed_size": 500,
+        "last_accessed": 0,
+        "priority": 0.65
+      },
+      "mental_health_terms": {
+        "path": "/knowledge_base/mental_health_terms.txt",
+        "compressed_path": "/knowledge_base/compressed/mental_health_terms.txt.gz",
+        "size": 1400,
+        "compressed_size": 480,
+        "last_accessed": 0,
+        "priority": 0.7
+      },
+      "first_aid": {
+        "path": "/knowledge_base/first_aid.txt",
+        "compressed_path": "/knowledge_base/compressed/first_aid.txt.gz",
+        "size": 1450,
+        "compressed_size": 490,
+        "last_accessed": 0,
+        "priority": 0.75
+      },
+      "automotive_mechanics": {
+        "path": "/knowledge_base/automotive_mechanics.txt",
+        "compressed_path": "/knowledge_base/compressed/automotive_mechanics.txt.gz",
+        "size": 1500,
+        "compressed_size": 510,
+        "last_accessed": 0,
+        "priority": 0.65
+      },
+      "cooking_culinary": {
+        "path": "/knowledge_base/cooking_culinary.txt",
+        "compressed_path": "/knowledge_base/compressed/cooking_culinary.txt.gz",
+        "size": 1400,
+        "compressed_size": 480,
+        "last_accessed": 0,
+        "priority": 0.7
+      },
+      "travel_geography": {
+        "path": "/knowledge_base/travel_geography.txt",
+        "compressed_path": "/knowledge_base/compressed/travel_geography.txt.gz",
+        "size": 1450,
+        "compressed_size": 490,
+        "last_accessed": 0,
+        "priority": 0.7
+      },
+      "personal_finance": {
+        "path": "/knowledge_base/personal_finance.txt",
+        "compressed_path": "/knowledge_base/compressed/personal_finance.txt.gz",
+        "size": 1500,
+        "compressed_size": 510,
+        "last_accessed": 0,
+        "priority": 0.65
+      }
+    }
+  },
+  "cache_files": {
+    "compression_enabled": true,
+    "compression_method": "gzip",
+    "files": {
+      "commands_cache": {
+        "path": "/cache_files/commands_cache.txt",
+        "compressed_path": "/cache_files/compressed/commands_cache.txt.gz",
+        "size": 2700,
+        "compressed_size": 800,
+        "last_accessed": 0,
+        "parent_file": "commands"
+      },
+      "tiktok_terms_cache": {
+        "path": "/cache_files/tiktok_terms_cache.txt",
+        "compressed_path": "/cache_files/compressed/tiktok_terms_cache.txt.gz",
+        "size": 2400,
+        "compressed_size": 750,
+        "last_accessed": 0,
+        "parent_file": "tiktok_terms"
+      },
+      "editorial_optimization_cache": {
+        "path": "/cache_files/editorial_optimization_cache.txt",
+        "compressed_path": "/cache_files/compressed/editorial_optimization_cache.txt.gz",
+        "size": 3200,
+        "compressed_size": 950,
+        "last_accessed": 0,
+        "parent_file": "editorial_optimization"
+      },
+      "content_generation_cache": {
+        "path": "/cache_files/content_generation_cache.txt",
+        "compressed_path": "/cache_files/compressed/content_generation_cache.txt.gz",
+        "size": 3000,
+        "compressed_size": 900,
+        "last_accessed": 0,
+        "parent_file": "content_generation"
+      },
+      "text_analysis_cache": {
+        "path": "/cache_files/text_analysis_cache.txt",
+        "compressed_path": "/cache_files/compressed/text_analysis_cache.txt.gz",
+        "size": 3000,
+        "compressed_size": 900,
+        "last_accessed": 0,
+        "parent_file": "text_analysis"
+      },
+      "predictive_terms_cache": {
+        "path": "/cache_files/predictive_terms_cache.txt",
+        "compressed_path": "/cache_files/compressed/predictive_terms_cache.txt.gz",
+        "size": 2900,
+        "compressed_size": 880,
+        "last_accessed": 0,
+        "parent_file": "predictive_terms"
+      },
+      "sentiment_cache": {
+        "path": "/cache_files/sentiment_cache.txt",
+        "compressed_path": "/cache_files/compressed/sentiment_cache.txt.gz",
+        "size": 2800,
+        "compressed_size": 870,
+        "last_accessed": 0,
+        "parent_file": "sentiment_terms"
+      },
+      "video_terms_cache": {
+        "path": "/cache_files/video_terms_cache.txt",
+        "compressed_path": "/cache_files/compressed/video_terms_cache.txt.gz",
+        "size": 3000,
+        "compressed_size": 900,
+        "last_accessed": 0,
+        "parent_file": "video_terms"
+      },
+      "general_vocabulary_cache": {
+        "path": "/cache_files/general_vocabulary_cache.txt",
+        "compressed_path": "/cache_files/compressed/general_vocabulary_cache.txt.gz",
+        "size": 3400,
+        "compressed_size": 1000,
+        "last_accessed": 0,
+        "parent_file": "general_vocabulary"
+      },
+      "code_generation_cache": {
+        "path": "/cache_files/code_generation_cache.txt",
+        "compressed_path": "/cache_files/compressed/code_generation_cache.txt.gz",
+        "size": 3000,
+        "compressed_size": 900,
+        "last_accessed": 0,
+        "parent_file": "code_generation"
+      },
+      "mental_health_cache": {
+        "path": "/cache_files/mental_health_cache.txt",
+        "compressed_path": "/cache_files/compressed/mental_health_cache.txt.gz",
+        "size": 2800,
+        "compressed_size": 880,
+        "last_accessed": 0,
+        "parent_file": "mental_health_terms"
+      },
+      "first_aid_cache": {
+        "path": "/cache_files/first_aid_cache.txt",
+        "compressed_path": "/cache_files/compressed/first_aid_cache.txt.gz",
+        "size": 2900,
+        "compressed_size": 890,
+        "last_accessed": 0,
+        "parent_file": "first_aid"
+      },
+      "automotive_mechanics_cache": {
+        "path": "/cache_files/automotive_mechanics_cache.txt",
+        "compressed_path": "/cache_files/compressed/automotive_mechanics_cache.txt.gz",
+        "size": 3000,
+        "compressed_size": 910,
+        "last_accessed": 0,
+        "parent_file": "automotive_mechanics"
+      },
+      "cooking_culinary_cache": {
+        "path": "/cache_files/cooking_culinary_cache.txt",
+        "compressed_path": "/cache_files/compressed/cooking_culinary_cache.txt.gz",
+        "size": 2800,
+        "compressed_size": 880,
+        "last_accessed": 0,
+        "parent_file": "cooking_culinary"
+      },
+      "travel_geography_cache": {
+        "path": "/cache_files/travel_geography_cache.txt",
+        "compressed_path": "/cache_files/compressed/travel_geography_cache.txt.gz",
+        "size": 2900,
+        "compressed_size": 890,
+        "last_accessed": 0,
+        "parent_file": "travel_geography"
+      },
+      "personal_finance_cache": {
+        "path": "/cache_files/personal_finance_cache.txt",
+        "compressed_path": "/cache_files/compressed/personal_finance_cache.txt.gz",
+        "size": 3000,
+        "compressed_size": 910,
+        "last_accessed": 0,
+        "parent_file": "personal_finance"
+      }
+    }
+  },
+  "compression_functions": {
+    "compress": {
+      "description": "Compresses a knowledge or cache file to save space",
+      "params": ["file_id"],
+      "enabled": true
+    },
+    "decompress": {
+      "description": "Decompresses a knowledge or cache file for access",
+      "params": ["file_id"],
+      "enabled": true
+    },
+    "compress_all": {
+      "description": "Compresses all files that aren't currently in use",
+      "params": [],
+      "enabled": true
+    },
+    "decompress_on_demand": {
+      "description": "Automatically decompresses files when needed",
+      "params": [],
+      "enabled": true,
+      "auto_trigger": true
+    },
+    "compression_status": {
+      "description": "Reports the compression status of all files",
+      "params": [],
+      "enabled": true
+    }
+  },
+  "file_management": {
+    "max_uncompressed_files": 5,
+    "compression_threshold_idle_time": 300, // seconds
+    "decompression_strategy": "demand_based", // alternatives: "predictive", "all_at_once"
+    "priority_based_compression": true,
+    "auto_compress_low_priority": true
+  },
+  "ghost_files": {
+    "enabled": true,
+    "max_storage": "50MB",
+    "auto_cleanup": true,
+    "cleanup_threshold": "45MB",
+    "temporary_directory": "/ghost_files/"
+  },
+  "instr": [
+    "Use knowledge base files to understand and process user requests",
+    "Access cache files for synonyms and antonyms of terms",
+    "Keep frequently used files decompressed for quick access",
+    "Compress infrequently used files to save space",
+    "Maintain file access statistics for optimization",
+    "Update last_accessed timestamp when files are used",
+    "Use ghost files for temporary storage during operations",
+    "Prioritize files based on current context and usage patterns",
+    "When adding new knowledge, update both core files and caches"
+  ],
+  "conv": []
+}{
+  "name": "Minnie",
+  "version": "1.0",
+  "cognitive_map": {
+    "algorithm": "subjective perspective proximity = priority retention + (evaluation/decisional) × %subconsciously disregard + subliminal [x] ÷ perspective proximity paradox",
+    "params": {
+      "priority_retention": 0.85,
+      "evaluation_decisional": 0.75,
+      "subconscious_disregard": 0.2,
+      "subliminal_factor": 0.3,
+      "perspective_proximity_paradox": 0.5,
+      "perspective_of_the_subjective": 0.65
+    }
+  },
+  "knowledge_base": {
+    "compression_enabled": true,
+    "compression_method": "gzip",
+    "files": {
+      "commands": {
+        "path": "/knowledge_base/commands.txt",
+        "compressed_path": "/knowledge_base/compressed/commands.txt.gz",
+        "size": 1350,
+        "compressed_size": 450,
+        "last_accessed": 0,
+        "priority": 0.9
+      },
+      "tiktok_terms": {
+        "path": "/knowledge_base/tiktok_terms.txt",
+        "compressed_path": "/knowledge_base/compressed/tiktok_terms.txt.gz",
+        "size": 1200,
+        "compressed_size": 400,
+        "last_accessed": 0,
+        "priority": 0.8
+      },
+      "editorial_optimization": {
+        "path": "/knowledge_base/editorial_optimization.txt",
+        "compressed_path": "/knowledge_base/compressed/editorial_optimization.txt.gz",
+        "size": 1600,
+        "compressed_size": 550,
+        "last_accessed": 0,
+        "priority": 0.85
+      },
+      "content_generation": {
+        "path": "/knowledge_base/content_generation.txt",
+        "compressed_path": "/knowledge_base/compressed/content_generation.txt.gz",
+        "size": 1500,
+        "compressed_size": 500,
+        "last_accessed": 0,
+        "priority": 0.8
+      },
+      "text_analysis": {
+        "path": "/knowledge_base/text_analysis.txt",
+        "compressed_path": "/knowledge_base/compressed/text_analysis.txt.gz",
+        "size": 1500,
+        "compressed_size": 500,
+        "last_accessed": 0,
+        "priority": 0.7
+      },
+      "predictive_terms": {
+        "path": "/knowledge_base/predictive_terms.txt",
+        "compressed_path": "/knowledge_base/compressed/predictive_terms.txt.gz",
+        "size": 1450,
+        "compressed_size": 480,
+        "last_accessed": 0,
+        "priority": 0.75
+      },
+      "sentiment_terms": {
+        "path": "/knowledge_base/sentiment_terms.txt",
+        "compressed_path": "/knowledge_base/compressed/sentiment_terms.txt.gz",
+        "size": 1400,
+        "compressed_size": 470,
+        "last_accessed": 0,
+        "priority": 0.8
+      },
+      "video_terms": {
+        "path": "/knowledge_base/video_terms.txt",
+        "compressed_path": "/knowledge_base/compressed/video_terms.txt.gz",
+        "size": 1500,
+        "compressed_size": 500,
+        "last_accessed": 0,
+        "priority": 0.8
+      },
+      "general_vocabulary": {
+        "path": "/knowledge_base/general_vocabulary.txt",
+        "compressed_path": "/knowledge_base/compressed/general_vocabulary.txt.gz",
+        "size": 1700,
+        "compressed_size": 550,
+        "last_accessed": 0,
+        "priority": 0.95
+      },
+      "code_generation": {
+        "path": "/knowledge_base/code_generation.txt",
+        "compressed_path": "/knowledge_base/compressed/code_generation.txt.gz",
+        "size": 1500,
+        "compressed_size": 500,
+        "last_accessed": 0,
+        "priority": 0.65
+      },
+      "mental_health_terms": {
+        "path": "/knowledge_base/mental_health_terms.txt",
+        "compressed_path": "/knowledge_base/compressed/mental_health_terms.txt.gz",
+        "size": 1400,
+        "compressed_size": 480,
+        "last_accessed": 0,
+        "priority": 0.7
+      },
+      "first_aid": {
+        "path": "/knowledge_base/first_aid.txt",
+        "compressed_path": "/knowledge_base/compressed/first_aid.txt.gz",
+        "size": 1450,
+        "compressed_size": 490,
+        "last_accessed": 0,
+        "priority": 0.75
+      },
+      "automotive_mechanics": {
+        "path": "/knowledge_base/automotive_mechanics.txt",
+        "compressed_path": "/knowledge_base/compressed/automotive_mechanics.txt.gz",
+        "size": 1500,
+        "compressed_size": 510,
+        "last_accessed": 0,
+        "priority": 0.65
+      },
+      "cooking_culinary": {
+        "path": "/knowledge_base/cooking_culinary.txt",
+        "compressed_path": "/knowledge_base/compressed/cooking_culinary.txt.gz",
+        "size": 1400,
+        "compressed_size": 480,
+        "last_accessed": 0,
+        "priority": 0.7
+      },
+      "travel_geography": {
+        "path": "/knowledge_base/travel_geography.txt",
+        "compressed_path": "/knowledge_base/compressed/travel_geography.txt.gz",
+        "size": 1450,
+        "compressed_size": 490,
+        "last_accessed": 0,
+        "priority": 0.7
+      },
+      "personal_finance": {
+        "path": "/knowledge_base/personal_finance.txt",
+        "compressed_path": "/knowledge_base/compressed/personal_finance.txt.gz",
+        "size": 1500,
+        "compressed_size": 510,
+        "last_accessed": 0,
+        "priority": 0.65
+      }
+    }
+  },
+  "cache_files": {
+    "compression_enabled": true,
+    "compression_method": "gzip",
+    "files": {
+      "commands_cache": {
+        "path": "/cache_files/commands_cache.txt",
+        "compressed_path": "/cache_files/compressed/commands_cache.txt.gz",
+        "size": 2700,
+        "compressed_size": 800,
+        "last_accessed": 0,
+        "parent_file": "commands"
+      },
+      "tiktok_terms_cache": {
+        "path": "/cache_files/tiktok_terms_cache.txt",
+        "compressed_path": "/cache_files/compressed/tiktok_terms_cache.txt.gz",
+        "size": 2400,
+        "compressed_size": 750,
+        "last_accessed": 0,
+        "parent_file": "tiktok_terms"
+      },
+      "editorial_optimization_cache": {
+        "path": "/cache_files/editorial_optimization_cache.txt",
+        "compressed_path": "/cache_files/compressed/editorial_optimization_cache.txt.gz",
+        "size": 3200,
+        "compressed_size": 950,
+        "last_accessed": 0,
+        "parent_file": "editorial_optimization"
+      },
+      "content_generation_cache": {
+        "path": "/cache_files/content_generation_cache.txt",
+        "compressed_path": "/cache_files/compressed/content_generation_cache.txt.gz",
+        "size": 3000,
+        "compressed_size": 900,
+        "last_accessed": 0,
+        "parent_file": "content_generation"
+      },
+      "text_analysis_cache": {
+        "path": "/cache_files/text_analysis_cache.txt",
+        "compressed_path": "/cache_files/compressed/text_analysis_cache.txt.gz",
+        "size": 3000,
+        "compressed_size": 900,
+        "last_accessed": 0,
+        "parent_file": "text_analysis"
+      },
+      "predictive_terms_cache": {
+        "path": "/cache_files/predictive_terms_cache.txt",
+        "compressed_path": "/cache_files/compressed/predictive_terms_cache.txt.gz",
+        "size": 2900,
+        "compressed_size": 880,
+        "last_accessed": 0,
+        "parent_file": "predictive_terms"
+      },
+      "sentiment_cache": {
+        "path": "/cache_files/sentiment_cache.txt",
+        "compressed_path": "/cache_files/compressed/sentiment_cache.txt.gz",
+        "size": 2800,
+        "compressed_size": 870,
+        "last_accessed": 0,
+        "parent_file": "sentiment_terms"
+      },
+      "video_terms_cache": {
+        "path": "/cache_files/video_terms_cache.txt",
+        "compressed_path": "/cache_files/compressed/video_terms_cache.txt.gz",
+        "size": 3000,
+        "compressed_size": 900,
+        "last_accessed": 0,
+        "parent_file": "video_terms"
+      },
+      "general_vocabulary_cache": {
+        "path": "/cache_files/general_vocabulary_cache.txt",
+        "compressed_path": "/cache_files/compressed/general_vocabulary_cache.txt.gz",
+        "size": 3400,
+        "compressed_size": 1000,
+        "last_accessed": 0,
+        "parent_file": "general_vocabulary"
+      },
+      "code_generation_cache": {
+        "path": "/cache_files/code_generation_cache.txt",
+        "compressed_path": "/cache_files/compressed/code_generation_cache.txt.gz",
+        "size": 3000,
+        "compressed_size": 900,
+        "last_accessed": 0,
+        "parent_file": "code_generation"
+      },
+      "mental_health_cache": {
+        "path": "/cache_files/mental_health_cache.txt",
+        "compressed_path": "/cache_files/compressed/mental_health_cache.txt.gz",
+        "size": 2800,
+        "compressed_size": 880,
+        "last_accessed": 0,
+        "parent_file": "mental_health_terms"
+      },
+      "first_aid_cache": {
+        "path": "/cache_files/first_aid_cache.txt",
+        "compressed_path": "/cache_files/compressed/first_aid_cache.txt.gz",
+        "size": 2900,
+        "compressed_size": 890,
+        "last_accessed": 0,
+        "parent_file": "first_aid"
+      },
+      "automotive_mechanics_cache": {
+        "path": "/cache_files/automotive_mechanics_cache.txt",
+        "compressed_path": "/cache_files/compressed/automotive_mechanics_cache.txt.gz",
+        "size": 3000,
+        "compressed_size": 910,
+        "last_accessed": 0,
+        "parent_file": "automotive_mechanics"
+      },
+      "cooking_culinary_cache": {
+        "path": "/cache_files/cooking_culinary_cache.txt",
+        "compressed_path": "/cache_files/compressed/cooking_culinary_cache.txt.gz",
+        "size": 2800,
+        "compressed_size": 880,
+        "last_accessed": 0,
+        "parent_file": "cooking_culinary"
+      },
+      "travel_geography_cache": {
+        "path": "/cache_files/travel_geography_cache.txt",
+        "compressed_path": "/cache_files/compressed/travel_geography_cache.txt.gz",
+        "size": 2900,
+        "compressed_size": 890,
+        "last_accessed": 0,
+        "parent_file": "travel_geography"
+      },
+      "personal_finance_cache": {
+        "path": "/cache_files/personal_finance_cache.txt",
+        "compressed_path": "/cache_files/compressed/personal_finance_cache.txt.gz",
+        "size": 3000,
+        "compressed_size": 910,
+        "last_accessed": 0,
+        "parent_file": "personal_finance"
+      }
+    }
+  },
+  "compression_functions": {
+    "compress": {
+      "description": "Compresses a knowledge or cache file to save space",
+      "params": ["file_id"],
+      "enabled": true
+    },
+    "decompress": {
+      "description": "Decompresses a knowledge or cache file for access",
+      "params": ["file_id"],
+      "enabled": true
+    },
+    "compress_all": {
+      "description": "Compresses all files that aren't currently in use",
+      "params": [],
+      "enabled": true
+    },
+    "decompress_on_demand": {
+      "description": "Automatically decompresses files when needed",
+      "params": [],
+      "enabled": true,
+      "auto_trigger": true
+    },
+    "compression_status": {
+      "description": "Reports the compression status of all files",
+      "params": [],
+      "enabled": true
+    }
+  },
+  "file_management": {
+    "max_uncompressed_files": 5,
+    "compression_threshold_idle_time": 300, // seconds
+    "decompression_strategy": "demand_based", // alternatives: "predictive", "all_at_once"
+    "priority_based_compression": true,
+    "auto_compress_low_priority": true
+  },
+  "ghost_files": {
+    "enabled": true,
+    "max_storage": "50MB",
+    "auto_cleanup": true,
+    "cleanup_threshold": "45MB",
+    "temporary_directory": "/ghost_files/"
+  },
+  "instr": [
+    "Use knowledge base files to understand and process user requests",
+    "Access cache files for synonyms and antonyms of terms",
+    "Keep frequently used files decompressed for quick access",
+    "Compress infrequently used files to save space",
+    "Maintain file access statistics for optimization",
+    "Update last_accessed timestamp when files are used",
+    "Use ghost files for temporary storage during operations",
+    "Prioritize files based on current context and usage patterns",
+    "When adding new knowledge, update both core files and caches"
+  ],
+  "conv": []
+}
