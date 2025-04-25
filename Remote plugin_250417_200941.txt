@@ -1,0 +1,35 @@
+{
+  "plugin": {
+    "name": "remote_control",
+    "version": "1.0",
+    "description": "Acts as the remote control for Minnie’s host app, managing permissions, inputs, and outputs",
+    "main": "RemoteControlPlugin",
+    "capabilities": [
+      {
+        "id": "request_permissions",
+        "description": "Requests device permissions (mic, camera, storage, screen)",
+        "ui_component": {"type": "button", "label": "Grant Permissions", "action": "request_permissions"}
+      },
+      {
+        "id": "process_input",
+        "description": "Processes user inputs (voice or text)",
+        "ui_component": {"type": "button", "label": "Send Input", "action": "process_input"}
+      },
+      {
+        "id": "display_output",
+        "description": "Displays outputs (e.g., captions, reminders)",
+        "ui_component": {"type": "tile", "label": "Output Display", "action": "display_output"}
+      },
+      {
+        "id": "manage_files",
+        "description": "Manages file operations (e.g., decompress knowledge base files)",
+        "ui_component": null
+      }
+    ],
+    "dependencies": ["MiniAICommunicationBridge"],
+    "lifecycle_hooks": {
+      "initialize": "initialize",
+      "deinitialize": "deinitialize"
+    }
+  }
+}

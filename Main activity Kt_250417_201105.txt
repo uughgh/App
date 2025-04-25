@@ -1,0 +1,37 @@
+package com.minnie.ai
+
+import android.os.Bundle
+import androidx.activity.ComponentActivity
+import androidx.activity.compose.setContent
+import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.padding
+import androidx.compose.material3.MaterialTheme
+import androidx.compose.material3.Surface
+import androidx.compose.runtime.Composable
+import androidx.compose.ui.Modifier
+import androidx.compose.ui.unit.dp
+import com.minnie.ai.ui.ApplicationInterface
+import com.minnie.ai.plugins.PlugInManager
+
+class MainActivity : ComponentActivity() {
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        val pluginManager = PlugInManager()
+        val appInterface = ApplicationInterface(pluginManager)
+        
+        setContent {
+            MaterialTheme {
+                Surface {
+                    AppContent(appInterface)
+                }
+            }
+        }
+    }
+}
+
+@Composable
+fun AppContent(appInterface: ApplicationInterface) {
+    Column(modifier = Modifier.padding(16.dp)) {
+        appInterface.renderInterface()
+    }
+}

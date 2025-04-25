@@ -1,0 +1,32 @@
+Build Minnie’s host app, a 5MB offline Android AI app, in Firebase Studio’s Code view. Use ONLY these files, no Google JSON or external dependencies. The app uses Jetpack Compose for the UI, Mini_P.syAI.json for logic, and remote_control_plugin.json for device interactions (permissions, inputs, outputs). It’s logic-driven, runs entirely offline, with \~0.5MB app + 4.5MB AI structure.
+
+Files:
+
+- Mini_P.syAI.json: JSON framework for logic and plug-ins.
+- remote_control_plugin.json: Plug-in for permissions, inputs, outputs.
+- remote_control.txt: Knowledge base for remote control logic.
+- build.gradle.kts: Android dependencies.
+- MainActivity.kt: App entry point with Compose UI.
+- ApplicationInterface.kt: Renders plug-in UI components.
+- RemoteControlPlugin.kt: Implements remote_control plug-in.
+- JsonFrameworkManager.kt: Parses Mini_P.syAI.json.
+- PlugInManager.kt: Loads plug-ins.
+- MiniAICommunicationBridge.kt: Connects plug-ins to AI core.
+- ui_sketch.png: Guide for Compose UI layout.
+
+Tasks:
+
+1. Set up an Android project with build.gradle.kts.
+2. Use JsonFrameworkManager.kt to load Mini_P.syAI.json offline.
+3. Build Compose UI with MainActivity.kt and ApplicationInterface.kt, creating buttons (“Grant Permissions,” “Send Input”) and a tile (“Output Display”) based on remote_control_plugin.json and ui_sketch.png.
+4. Load remote_control_plugin.json with PlugInManager.kt.
+5. Implement RemoteControlPlugin.kt for permissions, inputs, and outputs, using remote_control.txt for logic.
+6. Use MiniAICommunicationBridge.kt for plug-in communication.
+7. Ensure offline operation, caching all files locally with Zlib compression.
+8. Test: Input “Hey Minnie, generate a TikTok caption” should output “Golden hour glow! 🌅 #SunsetVibes”.
+
+Notes:
+
+- Total size: \~5MB (\~0.5MB app, \~4.5MB AI structure).
+- No Firebase or online dependencies; use local logic only.
+- Avoid PII and comply with Google’s AI policies.

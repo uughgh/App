@@ -1,0 +1,77 @@
+{
+  "name": "Minnie",
+  "version": "1.1",
+  "operation_mode": "offline",
+  "serverless": true,
+  "cognitive_map": {
+    "algorithm": "subjective perspective proximity = priority retention + (evaluation/decisional) × %subconsciously disregard + subliminal[x] ÷ perspective proximity paradox",
+    "params": {
+      "priority_retention": 0.85,
+      "evaluation_decisional": 0.75,
+      "subconscious_disregard": 0.2,
+      "subliminal_factor": 0.3,
+      "perspective_proximity_paradox": 0.5,
+      "perspective_of_the_subjective": 0.65
+    }
+  },
+  "functions": {
+    "1a_conversational_intelligence": [
+      {"name": "understand_context", "description": "Analyzes user input to understand context", "ui_component": null},
+      {"name": "process_voice_command", "description": "Processes voice inputs", "ui_component": {"type": "button", "label": "Voice Input", "action": "process_voice_command"}}
+    ],
+    "1c_creative_generation": [
+      {"name": "generate_caption", "description": "Generates social media captions", "ui_component": null}
+    ],
+    "1h_remote_control": [
+      {
+        "name": "remote_control",
+        "description": "Manages device interactions (permissions, inputs, outputs)",
+        "ui_component": null
+      }
+    ]
+  },
+  "knowledge_base": {
+    "compression_enabled": true,
+    "compression_method": "gzip",
+    "files": {
+      "remote_control": {
+        "path": "/knowledge_base/remote_control.txt",
+        "compressed_path": "/knowledge_base/compressed/remote_control.txt.gz",
+        "size": 2000,
+        "compressed_size": 650,
+        "last_accessed": 0,
+        "priority": 0.85
+      }
+    }
+  },
+  "cache_files": {
+    "compression_enabled": true,
+    "compression_method": "gzip",
+    "files": {
+      "remote_control_cache": {
+        "path": "/cache_files/remote_control_cache.txt",
+        "compressed_path": "/cache_files/compressed/remote_control_cache.txt.gz",
+        "size": 4000,
+        "compressed_size": 1200,
+        "last_accessed": 0,
+        "parent_file": "remote_control"
+      }
+    }
+  },
+  "plugins": {
+    "directory": "/plugins",
+    "loaded": [
+      {
+        "name": "remote_control",
+        "template_path": "/plugins/remote_control_plugin.json",
+        "status": "active"
+      }
+    ]
+  },
+  "instr": [
+    "Use knowledge base files to process requests",
+    "Load plug-ins via PlugInManager at startup",
+    "Use MiniAICommunicationBridge for plug-in communication",
+    "Cache all files locally for offline use"
+  ]
+}

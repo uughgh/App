@@ -1,0 +1,56 @@
+package com.minnie.ai.plugins
+
+import com.google.gson.Gson
+import java.io.File
+
+class PlugInManager {
+    private val gson = Gson()
+    private val plugins = mutableMapOf<String, PluginTemplate>()
+    private val bridge = MiniAICommunicationBridge()
+
+    data class PluginTemplate(
+        val name: String,
+        val capabilities: List<Capability>,
+        val uiComponent: UiComponent?
+    )
+
+    data class Capability(
+        val id: String,
+        val description: String,
+        val uiComponent: UiComponent?
+    )
+
+    data class UiComponent(
+        val type: String,
+        val label: String,
+        val action: String
+    )
+
+    fun loadPlugins(pluginDir: String) {
+        val dir = File(pluginDir)
+        if (dir.exists()) {
+            dir.listFiles { _, name -> name.endsWith(".json") }?.forEach { file ->
+                val plugin = gson.fromJson(file.readText(), PluginTemplate::class.java)
+                plugins[plugin.name] = plugin
+                if (plugin.name == "remote_control") {
+                    RemoteControlPlugin(bridge).initialize()
+                }
+            }
+        }
+    }
+
+    fun getPluginTemplates(): List<PluginTemplate> {
+        return plugins.values.toList()
+    }
+
+    fun executeAction(action: String) {
+        when (action) {
+            "request_permissions" -> RemoteControlPlugin(bridge).requestPermissions(bridge.getActivity())
+            "process_input" -> {
+                val output = RemoteControlPlugin(bridge).processInput("Hey Minnie, generate a TikTok caption")
+                bridge.displayOutput(output)
+            }
+            "display_output" -> bridge.displayOutput("Output displayed")
+        }
+    }
+}

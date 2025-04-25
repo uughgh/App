@@ -1,0 +1,13 @@
+minnie-handover/
+├── INSTRUCTIONS_FOR_GEMINI.txt
+├── Mini_P.syAI.json
+├── remote_control_plugin.json
+├── remote_control.txt
+├── build.gradle.kts
+├── MainActivity.kt
+├── ApplicationInterface.kt
+├── RemoteControlPlugin.kt
+├── JsonFrameworkManager.kt
+├── PlugInManager.kt
+├── MiniAICommunicationBridge.kt
+├── ui_sketch.png

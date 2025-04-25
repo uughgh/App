@@ -1,0 +1,46 @@
+package com.minnie.ai.ui
+
+import androidx.compose.foundation.layout.Spacer
+import androidx.compose.foundation.layout.height
+import androidx.compose.material3.Button
+import androidx.compose.material3.Text
+import androidx.compose.runtime.Composable
+import androidx.compose.ui.Modifier
+import androidx.compose.ui.unit.dp
+import com.minnie.ai.plugins.PlugInManager
+import com.minnie.ai.plugins.PluginTemplate
+
+class ApplicationInterface(private val pluginManager: PlugInManager) {
+    private val pluginTemplates = mutableListOf<PluginTemplate>()
+
+    init {
+        loadPluginTemplates()
+    }
+
+    private fun loadPluginTemplates() {
+        pluginTemplates.clear()
+        pluginTemplates.addAll(pluginManager.getPluginTemplates())
+    }
+
+    @Composable
+    fun renderInterface() {
+        pluginTemplates.forEach { template ->
+            template.capabilities.forEach { capability ->
+                capability.uiComponent?.let { ui ->
+                    when (ui.type) {
+                        "button" -> {
+                            Button(onClick = { pluginManager.executeAction(ui.action) }) {
+                                Text(ui.label)
+                            }
+                            Spacer(modifier = Modifier.height(8.dp))
+                        }
+                        "tile" -> {
+                            Text(text = ui.label, style = MaterialTheme.typography.bodyLarge)
+                            Spacer(modifier = Modifier.height(8.dp))
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

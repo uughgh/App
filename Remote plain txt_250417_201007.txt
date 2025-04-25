@@ -1,0 +1,19 @@
+# Remote Control Knowledge Base
+Commands:
+- request_permissions: Requests mic, camera, storage, screen permissions.
+- process_input: Handles voice or text input, routes to Minnie’s functions.
+- display_output: Shows outputs like captions or reminders.
+- manage_files: Decompresses knowledge base files using Zlib.
+
+Permissions:
+- Microphone: For voice input.
+- Camera: For potential video input.
+- Storage: For file access.
+- Screen Capture: For display output.
+
+Workflow:
+1. Load Mini_P.syAI.json to initialize.
+2. Request permissions as needed.
+3. Process inputs (e.g., “Hey Minnie, TikTok caption”).
+4. Display outputs (e.g., “Golden hour glow! 🌅 #SunsetVibes”).
+5. Manage files (e.g., decompress tiktok_terms.txt).

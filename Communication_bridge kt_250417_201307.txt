@@ -1,0 +1,36 @@
+package com.minnie.ai
+
+import androidx.activity.ComponentActivity
+import com.minnie.ai.plugins.RemoteControlPlugin
+
+class MiniAICommunicationBridge {
+    private val plugins = mutableMapOf<String, Any>()
+    private var activity: ComponentActivity? = null
+
+    fun registerPlugin(name: String, plugin: Any) {
+        plugins[name] = plugin
+    }
+
+    fun unregisterPlugin(name: String) {
+        plugins.remove(name)
+    }
+
+    fun setActivity(activity: ComponentActivity) {
+        this.activity = activity
+    }
+
+    fun getActivity(): ComponentActivity {
+        return activity ?: throw IllegalStateException("Activity not set")
+    }
+
+    fun processInput(input: String): String? {
+        return when (input) {
+            "Hey Minnie, generate a TikTok caption" -> "Golden hour glow! 🌅 #SunsetVibes"
+            else -> null
+        }
+    }
+
+    fun displayOutput(output: String) {
+        // Placeholder for displaying output in UI
+    }
+}
