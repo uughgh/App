@@ -1,0 +1,224 @@
+{
+  "coverPage": {
+    "cid": "unique_conversation_identifier",
+    "ts": "timestamp_of_conversation_start",
+    "uid": "unique_user_identifier",
+    "summary": "conversation focused on AI development. JSON framework with Mini AI integration.",
+    "sections": ["conv", "algColl", "meta", "evar"]
+  },
+  "conv": [
+    {
+      "txt": "user's_input_text",
+      "mod": "text/voice/image/etc.",
+      "sent": "positive/negative/neutral",
+      "pfc_input": {
+        "priority_retention": 10,
+        "evaluation_decisregard": 5,
+        "subconscious_disregard": 20,
+        "perspective_proximity_paradox": 1.5
+      },
+      "pfc_output": null
+    }
+  ],
+  "ar": [
+    {
+      "txt": "AI's-generated_response",
+      "mod": "text/voice/image/etc.",
+      "alg": "[list_of_algorithms_used_for_analysis]",
+      "cm": {}
+    }
+  ],
+  "algColl": {
+    "algs": [
+      {
+        "aid": "unique_algorithm_identifier",
+        "desc": "description_of_algorithm_functionality",
+        "pm": {}
+      }
+    ]
+  },
+  "instr": [
+    "Append new turns to conv.",
+    "Update cm based on user interactions.",
+    "Trigger new UI or topic change."
+  ]
+}
+
+{
+  "coverPage": {
+    "cid": "unique_conversation_identifier",
+    "ts": "timestamp_of_conversation_start",
+    "uid": "unique_user_identifier",
+    "summary": "conversation focused on AI development. JSON framework with Mini AI integration.",
+    "sections": ["conv", "algColl", "meta", "evar"]
+  },
+  "conv": [
+    {
+      "txt": "user's_input_text",
+      "mod": "text/voice/image/etc.",
+      "sent": "positive/negative/neutral",
+      "pfc_input": {
+        "priority_retention": 10,
+        "evaluation_decisregard": 5,
+        "subconscious_disregard": 20,
+        "perspective_proximity_paradox": 1.5
+      },
+      "pfc_output": null
+    }
+  ],
+  "ar": [
+    {
+      "txt": "AI's-generated_response",
+      "mod": "text/voice/image/etc.",
+      "alg": "[list_of_algorithms_used_for_analysis]",
+      "cm": {}
+    }
+  ],
+  "algColl": {
+    "algs": [
+      {
+        "aid": "understand_context",
+        "desc": "function to analyze context of user input",
+        "pm": {
+          "usage_example": "understand context of 'i'm tired'",
+          "related_functions": ["detect_mood", "respond_empathically"]
+        }
+      },
+      {
+        "aid": "resolve_ambiguity",
+        "desc": "function to clarify ambiguous user input",
+        "pm": {
+          "usage_example": "resolve ambiguity in 'set it up'",
+          "related_functions": ["detect_intent", "answer_question"]
+        }
+      },
+      {
+        "aid": "process_voice_command",
+        "desc": "function to process voice input",
+        "pm": {
+          "usage_example": "process voice command 'set reminder'",
+          "related_functions": ["understand_context", "resolve_ambiguity"]
+        }
+      },
+      {
+        "aid": "convert_speech_to_text",
+        "desc": "function to convert speech to text",
+        "pm": {
+          "usage_example": "convert speech 'play music'",
+          "related_functions": ["process_voice_command"]
+        }
+      },
+      {
+        "aid": "handle_voice_error",
+        "desc": "function to manage voice input errors",
+        "pm": {
+          "usage_example": "handle voice error 'unrecognized speech'",
+          "related_functions": ["process_voice_command", "convert_speech_to_text"]
+        }
+      },
+      {
+        "aid": "summarize_text",
+        "desc": "function to condense text into key points",
+        "pm": {
+          "usage_example": "summarize this article",
+          "related_functions": ["answer_question"]
+        }
+      },
+      {
+        "aid": "trim_video",
+        "desc": "function to shorten or trim video length",
+        "pm": {
+          "usage_example": "trim video to 5 seconds",
+          "related_functions": ["optimize_for_platform", "edit_image"]
+        }
+      },
+      {
+        "aid": "edit_and_upload_video",
+        "desc": "function to edit a video and upload it to a platform",
+        "pm": {
+          "usage_example": "edit and upload video to YouTube",
+          "related_functions": ["trim_video", "optimize_for_platform"]
+        }
+      },
+      {
+        "aid": "cross_platform_optimize",
+        "desc": "function to optimize media for multiple platforms",
+        "pm": {
+          "usage_example": "optimize video for TikTok and Instagram",
+          "related_functions": ["trim_video", "suggest_hashtags"]
+        }
+      },
+      {
+        "aid": "generate_caption",
+        "desc": "function to create a social media caption",
+        "pm": {
+          "usage_example": "generate caption for dog park photo",
+          "related_functions": ["write_post", "suggest_hashtags"]
+        }
+      },
+      {
+        "aid": "create_and_share_post",
+        "desc": "function to create a post and share it on a platform",
+        "pm": {
+          "usage_example": "create and share a post on Instagram",
+          "related_functions": ["generate_caption", "optimize_for_platform"]
+        }
+      },
+      {
+        "aid": "set_reminder",
+        "desc": "function to schedule a reminder",
+        "pm": {
+          "usage_example": "set reminder for 10 AM",
+          "related_functions": ["send_message", "predict_next_action"]
+        }
+      },
+      {
+        "aid": "set_table",
+        "desc": "function to arrange a table",
+        "pm": {
+          "usage_example": "set table for dinner",
+          "related_functions": ["organize_space"]
+        }
+      },
+      {
+        "aid": "learn_new_function",
+        "desc": "function to learn a new task from user input",
+        "pm": {
+          "usage_example": "learn to schedule meetings",
+          "related_functions": ["set_reminder", "predict_next_action"]
+        }
+      },
+      {
+        "aid": "adapt_to_user",
+        "desc": "function to adapt responses to user habits",
+        "pm": {
+          "usage_example": "adapt to user's morning routine",
+          "related_functions": ["analyze_pattern", "predict_next_action"]
+        }
+      },
+      {
+        "aid": "handle_error",
+        "desc": "function to manage errors gracefully",
+        "pm": {
+          "usage_example": "handle error 'function not found'",
+          "related_functions": ["answer_question", "resolve_ambiguity"]
+        }
+      },
+      {
+        "aid": "offline_fallback",
+        "desc": "function to provide offline response when online lookup fails",
+        "pm": {
+          "usage_example": "provide offline response for 'what's trending'",
+          "related_functions": ["answer_question"]
+        }
+      }
+    ]
+  },
+  "instr": [
+    "Append new turns to conv.",
+    "Update cm based on user interactions.",
+    "Trigger new UI or topic change.",
+    "Use algColl to select appropriate functions for user input.",
+    "Update cm.cache with new interactions to improve future responses."
+  ]
+}

@@ -1,0 +1,26 @@
+"phone_data": {
+  "contacts": {
+    "enabled": true,
+    "data": []
+  },
+  "calendar": {
+    "enabled": true,
+    "data": []
+  },
+  "files": {
+    "enabled": true,
+    "data": []
+  },
+  "app_data": {
+    "enabled": true,
+    "data": []
+  },
+  "settings": {
+    "enabled": true,
+    "data": []
+  },
+  "usage_patterns": {
+    "enabled": true,
+    "data": []
+  }
+}
